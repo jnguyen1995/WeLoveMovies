@@ -13,7 +13,6 @@ exports.up = function (knex) {
       .inTable("theaters")
       .onDelete("cascade");
     table.boolean("is_showing");
-    table.timestamps(true, true);
   });
 };
 
